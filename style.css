@@ -1,14 +1,26 @@
 /* =============================================================================
   #TYPOGRAPHY
 ============================================================================= */
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
 
+    font-size: 32px;
+    text-transform: uppercase;
+}
 
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+
+    font-size: 15px;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+}
 
 /* =============================================================================
   #GENERAL 
 ============================================================================= */
 body {
-    background-color: white;
+    background-color: hsl(0, 0%, 95%);
 
     display: flex;
     justify-content: center;
@@ -18,26 +30,39 @@ body {
 }
 
 main {
-    background-color: orange;
-
     display: flex;
     flex-direction: column;
-
-    border-radius: 20px;
 }
 
 /* =============================================================================
   #CONTENT
 ============================================================================= */
 
-.sedans {
-    background-color: hsl(31, 77%, 52%);
+.card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
 }
 
-.suvs {
+ .card--sedans {
+    background-color: hsl(31, 77%, 52%);
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card--suvs {
     background-color: hsl(184, 100%, 22%);
 }
 
-.luxury {
+.card--luxury {
     background-color: hsl(179, 100%, 13%);
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+section img {
+    width: 25%;
 }
