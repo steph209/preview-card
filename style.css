@@ -34,6 +34,8 @@ main {
     flex-direction: column;
 
     width: 250px;
+
+    /* margin: 20px 5px; */
 }
 
 /* =============================================================================
@@ -71,7 +73,7 @@ section img {
 }
 
 /* =============================================================================
-  #CONTENT
+  #BUTTON
 ============================================================================= */
 button {
     font-size: 15px;
@@ -95,4 +97,31 @@ button {
 
 .card--luxury button {
     color: hsl(179, 100%, 13%);
+}
+
+
+/* =============================================================================
+  #DESKTOP
+============================================================================= */
+
+@media  screen and (min-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: row;
+
+        width: 70%
+
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .card--sedans {
+        border-bottom-left-radius: 10px;
+    }
+
+    .card--luxury {
+        border-top-right-radius: 10px;
+    }
 }
