@@ -32,6 +32,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
+
+    width: 250px;
 }
 
 /* =============================================================================
@@ -41,15 +43,16 @@ main {
 .card {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 
-    padding: 20px;
+    padding: 30px;
 }
 
  .card--sedans {
     background-color: hsl(31, 77%, 52%);
 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card--suvs {
@@ -59,10 +62,37 @@ main {
 .card--luxury {
     background-color: hsl(179, 100%, 13%);
 
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 section img {
-    width: 25%;
+    width: 30%;
+}
+
+/* =============================================================================
+  #CONTENT
+============================================================================= */
+button {
+    font-size: 15px;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 30px;
+
+    width: 60%;
+    padding: 10px 5px 10px 5px;
+}
+
+.card--sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.card--suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.card--luxury button {
+    color: hsl(179, 100%, 13%);
 }
