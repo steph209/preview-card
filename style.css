@@ -41,6 +41,9 @@ main {
 /* =============================================================================
   #CONTENT
 ============================================================================= */
+h1 {
+    padding: 10px 0 10px 0px;
+}
 
 .card {
     display: flex;
@@ -49,6 +52,10 @@ main {
 
     padding: 30px;
 }
+
+    .card p {
+        padding-bottom: 10px;
+    }
 
     .card--sedans {
         background-color: hsl(31, 77%, 52%);
@@ -70,6 +77,8 @@ main {
 
 section img {
     width: 30%;
+
+    padding-top: 10px;
 }
 
 /* =============================================================================
@@ -85,6 +94,7 @@ button {
 
     width: 60%;
     padding: 10px 5px 10px 5px;
+    /* margin-bottom: 10px; */
 
     cursor: pointer;
 }
@@ -99,14 +109,18 @@ button {
 
     .card--sedans button {
         color: hsl(31, 77%, 52%);
+        margin-bottom: 10px;
     }
 
     .card--suvs button {
         color: hsl(184, 100%, 22%);
+        margin-bottom: 10px;
+
     }
 
     .card--luxury button {
         color: hsl(179, 100%, 13%);
+        margin-bottom: 10px;
     }
 
 
@@ -114,13 +128,13 @@ button {
   #DESKTOP
 ============================================================================= */
 
-@media  screen and (min-width: 900px) {
+@media  screen and (min-width: 1550px) {
     main {
         display: flex;
         flex-direction: row;
 
-        width: 35%
-
+        width: 28%;
+        height: auto;
     }
 
     .card {
@@ -133,11 +147,11 @@ button {
         }
 
             .card--sedans p {
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
 
             .card--suvs p{
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
 
         .card--luxury {
@@ -146,6 +160,6 @@ button {
         }
 
             .card--luxury p {
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
 }
